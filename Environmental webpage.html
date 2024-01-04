@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/Users/sgous/OneDrive/Desktop/environment.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img{
+         position:relative;
+         border-radius:50%;
+         left:530px;
+         border:2px solid black;
+         
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Environmental Page</title>
+</head>
+<body>
+    <header>
+        <h1>Save Our Environment</h1>
+    </header>
+    
+    <section>
+        <p>Welcome to our environmental awareness page. Learn about ways to protect our planet and make a positive impact!</p>
+        <button onclick="showTip()">Get a Tip</button>
+        <p id="tip"></p>
+    </section>
+
+    <script>
+        function showTip() {
+            const tips = [
+                "Reduce, reuse, and recycle to minimize waste.",
+                "Conserve water by fixing leaks and using water-saving appliances.",
+                "Plant trees to contribute to a healthier environment.",
+                "Use energy-efficient appliances to reduce electricity consumption."
+            ];
+
+            const randomIndex = Math.floor(Math.random() * tips.length);
+            const tipElement = document.getElementById('tip');
+
+            tipElement.textContent = tips[randomIndex];
+        }
+
+    </script>
+<div class="bi">
+<img src="./Environmental webpage_files/OIP.pnvdimIPFj88w83t0I9Y2wAAAA">
+</div>
+
+
+</body></html>
